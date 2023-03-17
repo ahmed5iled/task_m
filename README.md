@@ -19,24 +19,22 @@ The task is make curd operations for (brand , categories , products , slider) an
           <br>
 url : http://localhost:8000/dashboard/login
                     <br>
-
 email :admin@task.com
                     <br>
-
 password :secret</li>
       <li>used yajra/laravel-datatables-oracle </li>
-      <li></li>
     </ul>
  
 
 
 ## run project 
--clone project 
--create .evn
--composer install 
--run php arisan migrate --seed 
--run php arisan serve 
-
+<ul>
+    <li>clone project </li>
+    <li>create .evn</li>
+    <li>composer install </li>
+    <li>run php arisan migrate --seed </li>
+    <li>run php arisan serve </li>
+</ul>
 
 
 ## License
