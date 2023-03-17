@@ -12,13 +12,23 @@
 The task is make curd operations for (brand , categories , products , slider) and fetch data init front page 
 
 ## used 
--Factory to fack data
--seeder To create data into database 
--to create data manual you can use dashboard 
+<ul>
+    <li>Factory to fack data</li>
+      <li>seeder To create data into database </li>
+      <li>to create data manual you can use dashboard 
+          <br>
 url : http://localhost:8000/dashboard/login
+                    <br>
+
 email :admin@task.com
-password :secret
--used yajra/laravel-datatables-oracle 
+                    <br>
+
+password :secret</li>
+      <li>used yajra/laravel-datatables-oracle </li>
+      <li></li>
+    </ul>
+ 
+
 
 ## run project 
 -clone project 
