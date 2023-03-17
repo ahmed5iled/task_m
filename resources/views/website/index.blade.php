@@ -11,15 +11,13 @@
                                 @foreach($sliders as $slider)
                                     <div class="swiper-slide">
                                         <a href="{{$slider->link}}">
-                                            <img src="{{Storage::url($slider->image)}}">
+                                            <img src="{{strstr($slider->image,'placeholder')?$slider->image:Storage::url($slider->image)}}">
                                         </a>
                                     </div>
                                 @endforeach
                             @endif
 
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
 
@@ -46,7 +44,7 @@
                                     <div class="swiper-slide">
                                         <div class="card">
                                             <div class="card-body">
-                                                <img src="{{Storage::url($offer->image)}}">
+                                                <img src="{{strstr($offer->image,'placeholder')?$offer->image:Storage::url($offer->image)}}">
                                             </div>
                                             <div class="card-footer">
                                                 <h5>{{$offer->name??'-'}}</h5>
@@ -77,14 +75,14 @@
             <div class="row text-center">
                 <!-- Start Left services -->
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="swiper mySwiper_1 mt-5">
+                    <div class="swiper mySwiper_2 mt-5">
                         <div class="swiper-wrapper">
                             @if($brands->count())
                                 @foreach($brands as $brand)
                                     <div class="swiper-slide">
                                         <div class="card">
                                             <div class="card-body">
-                                                <img src="{{Storage::url($brand->image)}}">
+                                                <img src="{{strstr($brand->image,'placeholder')?$brand->image:Storage::url($brand->image)}}">
                                             </div>
                                             <div class="card-footer">
                                                 <h5>{{$brand->name??'-'}}</h5>
@@ -121,7 +119,7 @@
                                     <div class="swiper-slide">
                                         <div class="card">
                                             <div class="card-body">
-                                                <img src="{{Storage::url($most_view->image)}}">
+                                                <img src="{{strstr($most_view->image,'placeholder')?$most_view->image:Storage::url($most_view->image)}}">
                                             </div>
                                             <div class="card-footer">
                                                 <h5>{{$most_view->name??'-'}}</h5>
@@ -159,7 +157,8 @@
                                     <div class="swiper-slide">
                                         <div class="card">
                                             <div class="card-body">
-                                                <img src="{{Storage::url($new_arrival->image)}}">
+                                                <img
+                                                    src="{{strstr($new_arrival->image,'placeholder')?$new_arrival->image:Storage::url($new_arrival->image)}}">
                                             </div>
                                             <div class="card-footer">
                                                 <h5>{{$new_arrival->name??'-'}}</h5>
